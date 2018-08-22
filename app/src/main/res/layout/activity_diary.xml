@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:padding="20dp"
+    android:background="@color/grey"
+    android:orientation="vertical"
+    tools:context="com.example.admin.thenotebook_mysql.diary">
+
+    <Button
+        android:id="@+id/pickdate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="PICK THE DATE"
+        android:background="@drawable/rounded_buttons"
+        android:onClick="datepicker"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:id="@+id/showdate"/>
+
+        <Space
+            android:layout_width="50dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/locationTV"
+            android:textSize="18sp"
+            android:layout_width="100dp"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/diaryentry"
+        android:inputType="textMultiLine"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:padding="20dp"
+        android:hint="Diary entry..."/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:padding="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Update   "
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/updatebtn"
+            app:srcCompat="@android:drawable/ic_popup_sync"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <Space
+            android:layout_width="138dp"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:text="Add      "
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|end"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_gravity="start">
+
+        <TextView
+            android:text=" Delete    "
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@android:drawable/ic_menu_delete"
+            android:id="@+id/deletebtn"/>
+
+        <Space
+            android:layout_width="130dp"
+            android:layout_height="10dp" />
+        <TextView
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search   " />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@android:drawable/ic_search_category_default" />
+
+    </LinearLayout>
+
+</LinearLayout>

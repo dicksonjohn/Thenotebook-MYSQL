@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@color/grey"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.thenotebook_mysql.MainActivity">
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:text="Register for notebook"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp"
+        android:paddingTop="30dp"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name" />
+
+    <EditText
+        android:background="@drawable/rounded_edittext"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:hint="Enter your name"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/editTextName" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username" />
+
+    <EditText
+        android:background="@drawable/rounded_edittext"
+        android:textColor="#000"
+        android:hint="Create Username"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/editTextUserName" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password" />
+
+    <EditText
+        android:background="@drawable/rounded_edittext"
+        android:textColor="#000"
+        android:hint="Choose Password"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:id="@+id/editTextPassword" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email" />
+
+    <EditText
+        android:background="@drawable/rounded_edittext"
+        android:textColor="#000"
+        android:hint="Enter Email"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:inputType="textEmailAddress"
+        android:id="@+id/editTextEmail" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_buttons"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/button_register"
+        android:id="@+id/buttonRegister" />
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_buttons"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/button_login"
+        android:id="@+id/buttonLogin" />
+
+</LinearLayout>
